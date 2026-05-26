@@ -1,5 +1,5 @@
 'use client';
-
+import { InfoSection, InfoCard } from '@/components/Info/Info';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -12,13 +12,12 @@ import {
   Grid,
   Column,
 } from '@carbon/react';
+import Image from 'next/image';
 import {
   Advocate,
   Globe,
   AcceleratingTransformation,
 } from '@carbon/pictograms-react';
-import { InfoSection, InfoCard } from '@/components/Info/Info';
-import Image from 'next/image';
 
 export default function LandingPage() {
   return (
@@ -95,7 +94,7 @@ export default function LandingPage() {
                 >
                   <p className="landing-page__p">
                     Carbon provides styles and components in Vanilla, React,
-                    Next, Angular, and Vue for anyone building on the web.
+                    Angular, and Vue for anyone building on the web.
                   </p>
                 </Column>
               </Grid>

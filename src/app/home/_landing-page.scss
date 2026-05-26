@@ -33,6 +33,7 @@ html {
 
 .tabs-group-content {
   padding: $spacing-10 0 $spacing-10 $spacing-06;
+  background-color: white;
 }
 
 .landing-page__subheading {
@@ -52,14 +53,22 @@ html {
 }
 
 .landing-page__r3 {
-  padding-top: $spacing-08;
-  padding-bottom: $spacing-08;
+  padding-top: $spacing-09;
+  padding-bottom: $spacing-09;
   padding-left: $spacing-06;
   @include landing-page-background;
 }
 
 .landing-page__label {
   @include type-style('heading-01');
+
+  @include breakpoint-down(md) {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.landing-page__title {
+  padding-bottom: 0.5rem;
 }
 
 .tabs-group {
@@ -82,8 +91,8 @@ html {
 @media (max-width: 672px) {
   .landing-page__illo {
     width: 528px;
-    width: 100%;
     height: auto;
+    width: 100%;
     float: inline-start;
   }
 }
